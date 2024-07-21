@@ -102,3 +102,268 @@ footer .container {
     margin: 0 auto;
     padding: 0 20px;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partner-box {
+    display: flex;
+    align-items: center;
+    background: #464646;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.partner-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.company-logo {
+    max-width: 250px;
+    height: auto;
+}
+
+.company-info {
+    flex: 3;
+    padding-left: 20px;
+    color: #FFFFFF;
+}
+
+.company-info h3 {
+    margin-top: 0;
+    color: #FFFzFFF;
+}
+
+.company-info p {
+    margin: 5px 0;
+    
+}
+
+.company-info a {
+    color: #FF5733; 
+    text-decoration: none;
+}
+
+.company-info .visit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #ffffff !important; /* Ensure the button text color stays white */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.visit-button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#capabilities-carousel {
+    background: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#capabilities-carousel .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#capabilities-carousel h2 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+#capabilities-carousel .carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+#capabilities-carousel .carousel-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+#capabilities-carousel .carousel-item {
+    min-width: 200px;
+    background: #007BFF;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+}
+
+#capabilities-carousel .carousel-item h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+#capabilities-carousel p {
+    margin: 10px 0;
+    color: #333;
+}
+
+#capabilities-carousel strong {
+    color: #007BFF;
+}
+
+.read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.read-more-button:hover {
+    background: #0056b3;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#donations {
+    background: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#donations .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#donations h2 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.donor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.donor-table th, .donor-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.donor-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.donor-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.total-donations-button, .donate-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.total-donations-button {
+    background: #007BFF;
+    color: #fff;
+}
+
+.total-donations-button:hover {
+    background: #0056b3;
+}
+
+.donate-now-button {
+    background: #28a745;
+    color: #fff;
+}
+
+.donate-now-button:hover {
+    background: #218838;
+}
