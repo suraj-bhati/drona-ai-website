@@ -3,24 +3,32 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f8f9fa;
-    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
 }
 
-.logo {
-    max-height: 50px;
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 150px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
 }
 
@@ -29,40 +37,55 @@ nav ul li {
 }
 
 nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #007bff;
     font-weight: bold;
 }
 
-.home-section, .about-section, .capabilities-section, .hardware-section, .contact-section {
-    padding: 60px 20px;
-    text-align: center;
+section {
+    padding: 20px 0;
 }
 
-.home-section {
-    background: #007bff;
-    color: white;
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.capabilities-section ul, .hardware-section ul {
+.hero-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-image {
+    width: 45%;
+    height: auto;
+}
+
+ul {
     list-style: none;
     padding: 0;
 }
 
-.capabilities-section li, .hardware-section li {
-    margin: 10px 0;
+ul li {
+    margin-bottom: 10px;
 }
 
-.hardware-logo {
-    max-width: 150px;
-    margin: 20px 0;
+.flySpark-logo {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
 }
 
 footer {
-    background: #f8f9fa;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1em 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
