@@ -71,10 +71,23 @@ ul li {
     margin-bottom: 10px;
 }
 
-.flySpark-logo {
-    width: 200px;
+.flySpark-logo-small {
+    width: 100px;
     display: block;
     margin: 20px auto;
+}
+
+.read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more-button:hover {
+    background: #0056b3;
 }
 
 footer {
