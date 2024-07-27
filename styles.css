@@ -1,3 +1,43 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    cursor: none; /* Hide the default cursor */
+    overflow: auto; /* Allow scrolling */
+}
+
+#drone-cursor {
+    position: fixed; /* Use fixed to keep it relative to the viewport */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    pointer-events: none; /* Ensure it doesn't interfere with clicking */
+    transform: translate(-50%, -50%); /* Center the image on the cursor */
+    z-index: 10000; /* Ensure it appears above other elements */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: visible; /* Ensure content is visible */
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content-section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
