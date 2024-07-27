@@ -1,15 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Carousel functionality
-    const track = document.querySelector('.carousel-track');
-    const items = document.querySelectorAll('.carousel-item');
-    const itemWidth = items[0].offsetWidth;
-    const trackWidth = track.scrollWidth;
-    const totalWidth = items.length * itemWidth;
-
-    if (totalWidth > trackWidth) {
-        track.innerHTML += track.innerHTML; // Duplicate items for seamless scrolling
-    }
-
     // Custom drone cursor functionality
     const droneCursor = document.createElement('img');
     droneCursor.src = "https://github.com/apk015/drona-ai-website/blob/main/%D0%B0%D1%8D%D1%80%D0%BE%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B0-5-drone.gif?raw=true";
@@ -20,3 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
         droneCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
     });
 });
+
+// Example for any additional JavaScript functionality
+// You can add other scripts below this section
+
+// Carousel functionality (if applicable)
+const track = document.querySelector('.carousel-track');
+if (track) {
+    const items = document.querySelectorAll('.carousel-item');
+    const itemWidth = items[0].offsetWidth;
+    const trackWidth = track.scrollWidth;
+    const totalWidth = items.length * itemWidth;
+
+    if (totalWidth > trackWidth) {
+        track.innerHTML += track.innerHTML; // Duplicate items for seamless scrolling
+    }
+}
