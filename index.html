@@ -5,89 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drona AI</title>
         <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-            cursor: none; /* Hide the default cursor */
-        }
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars to ensure the cursor stays within viewport */
+    position: relative;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    cursor: none; /* Hide the default cursor */
+}
 
-        #drone-cursor {
-            position: absolute;
-            width: 50px; /* Adjust the size as needed */
-            height: 50px; /* Adjust the size as needed */
-            pointer-events: none; /* Make sure the cursor doesn't interfere with clicking */
-            transform: translate(-50%, -50%); /* Ensure the cursor is centered on the pointer */
-            z-index: 1000; /* Ensure the cursor is on top of other elements */
-            transition: transform 0.1s ease;
-        }
+#drone-cursor {
+    position: fixed; /* Use fixed to keep it relative to the viewport */
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 10000; /* High z-index to ensure visibility */
+}
 
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: visible; /* Change to visible if required by content */
+}
 
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
-        }
+header, footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
 
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
+.content-section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 80%;
+}
 
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        header #branding {
-            float: left;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        .content-section {
-            padding: 20px;
-            background: #fff;
-            margin: 20px 0;
-        }
-
-        .content-section h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        .content-section p {
-            text-align: justify;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -298,16 +258,25 @@
             <p>&copy; 2024 Drona AI. All rights reserved.</p>
         </div>
     </footer>
-               <img id="drone-cursor" src="https://github.com/apk015/drona-ai-website/blob/main/%D0%B0%D1%8D%D1%80%D0%BE%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B0-5-drone.gif?raw=true" alt="Custom Cursor">
         <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const droneCursor = document.getElementById('drone-cursor');
+document.addEventListener('DOMContentLoaded', () => {
+    const droneCursor = document.createElement('img');
+    droneCursor.src = "https://github.com/apk015/drona-ai-website/blob/main/%D0%B0%D1%8D%D1%80%D0%BE%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B0-5-drone.gif?raw=true";
+    droneCursor.id = 'drone-cursor';
+    droneCursor.style.position = 'fixed';
+    droneCursor.style.pointerEvents = 'none';
+    droneCursor.style.width = '50px';
+    droneCursor.style.height = '50px';
+    droneCursor.style.zIndex = '10000';
+    droneCursor.style.transform = 'translate(-50%, -50%)';
+    document.body.appendChild(droneCursor);
 
-            document.addEventListener('mousemove', (e) => {
-                droneCursor.style.left = `${e.clientX}px`;
-                droneCursor.style.top = `${e.clientY}px`;
-            });
-        });
+    document.addEventListener('mousemove', (e) => {
+        droneCursor.style.left = e.clientX + 'px';
+        droneCursor.style.top = e.clientY + 'px';
+    });
+});
+
     </script>
     <script src="main.js"></script>
 </body>
