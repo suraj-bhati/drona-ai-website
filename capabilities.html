@@ -4,91 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drona AI - Capabilities</title>
-        <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-            cursor: none; /* Hide the default cursor */
-        }
-
-#drone-cursor {
-    position: fixed; /* Use fixed to keep it relative to the viewport */
-    width: 75px; /* Increased size */
-    height: 75px; /* Increased size */
-    pointer-events: none; /* Ensure it doesn't interfere with clicking */
-    transform: translate(-50%, -50%); /* Center the image on the cursor */
-    z-index: 10000; /* Ensure it appears above other elements */
-}
-
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
-        }
-
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        header #branding {
-            float: left;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        .content-section {
-            padding: 20px;
-            background: #fff;
-            margin: 20px 0;
-        }
-
-        .content-section h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        .content-section p {
-            text-align: justify;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
     <link rel="stylesheet" href="styles.css"></head>
 <body>
     <header>
@@ -329,16 +244,5 @@
             <p>&copy; 2024 Drona AI. All rights reserved.</p>
         </div>
     </footer>
-              <img id="drone-cursor" src="https://github.com/apk015/drona-ai-website/blob/main/%D0%B0%D1%8D%D1%80%D0%BE%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B0-5-drone.gif?raw=true" alt="Custom Cursor">
-        <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const droneCursor = document.getElementById('drone-cursor');
-
-            document.addEventListener('mousemove', (e) => {
-                droneCursor.style.left = `${e.clientX}px`;
-                droneCursor.style.top = `${e.clientY}px`;
-            });
-        });
-    </script>
     <script src="main.js"></script></body>
 </html>
