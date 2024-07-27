@@ -14,15 +14,15 @@
             cursor: none; /* Hide the default cursor */
         }
 
-        #drone-cursor {
-            position: absolute;
-            width: 50px; /* Adjust the size as needed */
-            height: 50px; /* Adjust the size as needed */
-            pointer-events: none; /* Make sure the cursor doesn't interfere with clicking */
-            transform: translate(-50%, -50%); /* Ensure the cursor is centered on the pointer */
-            z-index: 1000; /* Ensure the cursor is on top of other elements */
-            transition: transform 0.1s ease;
-        }
+#drone-cursor {
+    position: fixed; /* Use fixed to keep it relative to the viewport */
+    width: 75px; /* Increased size */
+    height: 75px; /* Increased size */
+    pointer-events: none; /* Ensure it doesn't interfere with clicking */
+    transform: translate(-50%, -50%); /* Center the image on the cursor */
+    z-index: 10000; /* Ensure it appears above other elements */
+}
+
 
         .container {
             width: 80%;
