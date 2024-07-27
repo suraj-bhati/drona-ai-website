@@ -10,42 +10,39 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrollbars to ensure the cursor stays within viewport */
-    position: relative;
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
     cursor: none; /* Hide the default cursor */
+    overflow: auto; /* Allow scrolling */
 }
 
 #drone-cursor {
     position: fixed; /* Use fixed to keep it relative to the viewport */
-    width: 50px;
-    height: 50px;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 10000; /* High z-index to ensure visibility */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    pointer-events: none; /* Ensure it doesn't interfere with clicking */
+    transform: translate(-50%, -50%); /* Center the image on the cursor */
+    z-index: 10000; /* Ensure it appears above other elements */
 }
 
 .container {
     width: 80%;
     margin: auto;
-    overflow: visible; /* Change to visible if required by content */
+    overflow: visible; /* Ensure content is visible */
 }
 
 header, footer {
-    width: 100%;
-    padding: 10px 0;
     background-color: #333;
     color: #fff;
     text-align: center;
+    padding: 10px 0;
 }
 
 .content-section {
     padding: 20px;
-    background: #fff;
+    background-color: #fff;
     margin: 20px auto;
-    max-width: 80%;
 }
 
     </style>
@@ -273,8 +270,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(droneCursor);
 
     document.addEventListener('mousemove', (e) => {
-        droneCursor.style.left = e.clientX + 'px';
-        droneCursor.style.top = e.clientY + 'px';
+        droneCursor.style.left = `${e.clientX}px`;
+        droneCursor.style.top = `${e.clientY}px`;
     });
 });
 
