@@ -4,48 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drona AI</title>
-        <style>
-body, html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    cursor: none; /* Hide the default cursor */
-    overflow: auto; /* Allow scrolling */
-}
-
-#drone-cursor {
-    position: fixed; /* Use fixed to keep it relative to the viewport */
-    width: 50px; /* Adjust the size as needed */
-    height: 50px; /* Adjust the size as needed */
-    pointer-events: none; /* Ensure it doesn't interfere with clicking */
-    transform: translate(-50%, -50%); /* Center the image on the cursor */
-    z-index: 10000; /* Ensure it appears above other elements */
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: visible; /* Ensure content is visible */
-}
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.content-section {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px auto;
-}
-
-    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -255,27 +213,6 @@ header, footer {
             <p>&copy; 2024 Drona AI. All rights reserved.</p>
         </div>
     </footer>
-              <img id="drone-cursor" src="https://github.com/apk015/drona-ai-website/blob/main/%D0%B0%D1%8D%D1%80%D0%BE%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B0-5-drone.gif?raw=true" alt="Custom Cursor">
-        <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const droneCursor = document.createElement('img');
-    droneCursor.src = "https://github.com/apk015/drona-ai-website/blob/main/%D0%B0%D1%8D%D1%80%D0%BE%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B0-5-drone.gif?raw=true";
-    droneCursor.id = 'drone-cursor';
-    droneCursor.style.position = 'fixed';
-    droneCursor.style.pointerEvents = 'none';
-    droneCursor.style.width = '50px';
-    droneCursor.style.height = '50px';
-    droneCursor.style.zIndex = '10000';
-    droneCursor.style.transform = 'translate(-50%, -50%)';
-    document.body.appendChild(droneCursor);
-
-    document.addEventListener('mousemove', (e) => {
-        droneCursor.style.left = `${e.clientX}px`;
-        droneCursor.style.top = `${e.clientY}px`;
-    });
-});
-
-    </script>
     <script src="main.js"></script>
 </body>
 </html>
