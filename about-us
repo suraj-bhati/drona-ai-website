@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Drona AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding img {
+            width: 50px;
+            height: auto;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com/800x400') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .showcase p {
+            font-size: 20px;
+        }
+
+        .content-section {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+        }
+
+        .content-section h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .content-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .content-section img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .capabilities, .technology {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .capability, .tech-item {
+            flex: 1 1 30%;
+            background: #f4f4f4;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .capability h3, .tech-item h3 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="http://drona-ai.org">
+                    <img src="https://github.com/apk015/drona-ai-website/blob/main/Drona-Ai.png?raw=true" alt="Drona AI Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/features.html">Features</a></li>
+                    <li><a href="/hardware.html">Supported Hardware</a></li>
+                    <li><a href="/capabilities.html">Capabilities</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Welcome to Drona AI, where innovation meets excellence in drone technology.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Our Vision</h2>
+            <p>Our vision is to make Drona AI the most advanced and reliable AI for drones. We aim to transform how drones are flown and used, offering cutting-edge technology that adapts to various environments and flight conditions. Whether you are a hobbyist seeking smoother flights or a professional looking for innovative solutions, Drona AI is here to elevate your drone experience.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Our Vision">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Our Technology</h2>
+            <p>Drona AI leverages state-of-the-art technologies to ensure exceptional flight stability and accuracy:</p>
+            <div class="technology">
+                <div class="tech-item">
+                    <h3>NVIDIA Technology</h3>
+                    <p>Utilizing NVIDIA's powerful hardware and AI capabilities, we harness the computational power necessary for real-time data processing and advanced AI functions.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Google AI</h3>
+                    <p>With Google’s AI and machine learning frameworks, we integrate sophisticated algorithms for predictive maintenance, dynamic obstacle avoidance, and environment learning.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Advanced Sensor Fusion</h3>
+                    <p>Combining data from multiple sensors to provide a comprehensive understanding of the drone's environment, ensuring precise navigation and stability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Our Commitment</h2>
+            <p>At Drona AI, we are committed to continuous innovation. Our AI model evolves with every dataset, ensuring it meets the most demanding requirements of the drone industry. We work tirelessly to bring new features and enhancements that unlock new possibilities in drone technology.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Our Commitment">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Meet Our Partners</h2>
+            <p>We collaborate with industry leaders to integrate the best technologies into our AI model:</p>
+            <div class="partners">
+                <div class="partner">
+                    <h3>FlySpark</h3>
+                    <p>Partnering with FlySpark to deliver advanced flight control solutions.</p>
+                </div>
+                <div class="partner">
+                    <h3>PX4.io</h3>
+                    <p>Collaborating with PX4.io to integrate robust and flexible drone software.</p>
+                </div>
+                <div class="partner">
+                    <h3>NVIDIA Corporation</h3>
+                    <p>Utilizing NVIDIA’s cutting-edge AI technology for superior performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Join Us on Our Journey</h2>
+            <p>We invite you to join us on this exciting journey as we push the boundaries of what's possible in drone technology. Whether you are a developer, a drone enthusiast, or a business seeking advanced drone solutions, Drona AI offers unmatched performance, safety, and efficiency.</p>
+            <p>For more information and support, please reach out to us at: <a href="mailto:drona.ai.org@gmail.com">drona.ai.org@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Drona AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
