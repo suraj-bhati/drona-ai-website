@@ -4,6 +4,7 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
+    cursor: none; /* Hide the default cursor */
 }
 
 header {
@@ -226,6 +227,15 @@ footer .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+#drone-cursor {
+    position: absolute;
+    width: 70px; /* Adjusted the size */
+    height: 70px; /* Adjusted the size */
+    pointer-events: none; /* Make sure the cursor doesn't interfere with clicking */
+    transition: transform 0.1s ease;
+    z-index: 1000; /* Ensure the cursor is on top of other elements */
 }
 
 #capabilities-carousel {
