@@ -6,133 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Drona AI</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
-        }
-
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        header #branding {
-            float: left;
-        }
-
-        header #branding img {
-            width: 50px;
-            height: auto;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        .content-section {
-            padding: 20px;
-            background: #fff;
-            margin: 20px 0;
-        }
-
-        .content-section h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        .content-section p {
-            text-align: justify;
-            margin-bottom: 10px;
-        }
-
-        .content-section img {
-            display: block;
-            margin: auto;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .contact-form {
-            background: #f4f4f4;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-
-        .contact-form h3 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background: #0779e4;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 
 <body>
@@ -143,15 +16,16 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/hardware.html">Supported Hardware</a></li>
-                    <li><a href="/capabilities.html">Capabilities</a></li>
-                    <li><a href="/Contact.html">Contact Now</a></li>
-                    <li><a href="/about-us.html">About us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hardware.html">Supported Hardware</a></li>
+                    <li><a href="capabilities.html">Capabilities</a></li>
+                    <li><a href="contact.html">Contact Now</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
     <section class="content-section">
         <div class="container">
             <h2>Contact Us</h2>
@@ -164,7 +38,7 @@
             <h2>Our Contact Details</h2>
             <p><strong>Email:</strong> <a href="mailto:drona.ai.org@gmail.com">drona.ai.org@gmail.com</a></p>
             <p><strong>Phone:</strong> +1-800-123-4567</p>
-            <p><strong>Address:</strong>75-78, Market Street, San Francisco, CA 94103, USA</p>
+            <p><strong>Address:</strong> 75-78, Market Street, San Francisco, CA 94103, USA</p>
         </div>
     </section>
 
@@ -172,17 +46,38 @@
         <div class="container">
             <h2>Find Us on the Map</h2>
             <div id="map" style="width:100%;height:400px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0862990894614!2d-122.07758338467914!3d37.41346977982916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b0e4666c87%3A0xab1c5d80dff9d66b!2sGoogleplex!5e0!3m2!1sen!2sus!4v1618030047756!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.355317973888!2d-122.42132628468188!3d37.77492977965971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d7e2bb73d%3A0x5b7b5b3a1b6e4812!2sMarket%20St%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1618030586016!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
+    <section class="content-section">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 Drona AI. All rights reserved.</p>
         </div>
     </footer>
+    
     <script src="main.js"></script>
 </body>
 
